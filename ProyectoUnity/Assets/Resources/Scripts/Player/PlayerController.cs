@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour {
 	public float Rotacion;
 	public GameObject PosicionBala;
 	public GameObject DireccionBala;
-	public GameObject Shoot;
+	public GameObject Shoot;	
+	public LineShoot lineScript;
 	// Use this for initialization
 	void Awake () {
 		instance = this;
@@ -33,7 +34,10 @@ public class PlayerController : MonoBehaviour {
 
 		}
 		if (Input.GetMouseButtonUp (0)) {
-			Instantiate (Shoot, PosicionBala.transform.position, Quaternion.identity);
+			lineScript.Shooting = true;
 		}
+	}	
+	public void Shoots(){
+		Instantiate (Shoot, PosicionBala.transform.position, Quaternion.identity);
 	}
 }

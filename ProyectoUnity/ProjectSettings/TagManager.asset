@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Line/Exit
+  - Line/Great
+  - Line/Perfect
+  - Line/Cool
+  - Line/Miss
+  - Line/Line
   layers:
   - Default
   - TransparentFX
